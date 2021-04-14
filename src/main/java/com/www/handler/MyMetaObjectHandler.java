@@ -17,6 +17,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("creatTime", new Date(), metaObject);
+        this.setFieldValByName("version", 1, metaObject);
     }
 
     //mp执行修改操作，这个方法执行
